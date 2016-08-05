@@ -1,22 +1,157 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<html>
 	<head>
-		<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title>Oliver Newman</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="images/onLogo.ico" />
+
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+			crossorigin="anonymous">
+
+		<!-- Bootstrap theme -->
+		<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+			integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+			crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+			crossorigin="anonymous"></script>
+		<!-- End Bootstrap stuff -->
+		
+		<!-- My CSS -->
+		<link rel="stylesheet" href="styles.css">
 	</head>
 
 	<body>
-		<p><b>Welcome to Oliver Newman's homepage!</b></p>
-		<p>It is currently a work in progress - please check back later for more.<br>
-		In the meantime, head to
-		<a href="https://github.com/oliver-newman">my GitHub</a> or
-		<a href="https://www.linkedin.com/in/oliver-newman-a74a02ba">my LinkedIn page</a>
-		   for more information.</p>
-		<p>Thanks! <br>
-			 Oliver
-	  </p>
-		<hr>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="#">Oliver Newman</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-full">
+      <div class="container-fluid color1">
+				<div class="row">
+					<div class="col-md-3 col-centered">
+						<img id="profile-pic" src="images/oliver.jpg" alt="Oliver">
+					</div>
+				</div>
+        <h1 class="theme-color">Oliver Newman</h1>
+      </div>
+
+			<div id="about-me" class="container-fluid color2">
+				<h2 class="theme-color">About Me</h2>
+				<p class="lead">I am a: </br></p>
+				<ul id="about-list" class="lead">
+					<li>junior computer science major at 
+						<a class="color2" href="https://www.swarthmore.edu">
+							Swarthmore College</a>;
+					</li>
+					<li>coder and aspiring software developer;</li>
+					<li>distance runner and road cyclist;</li>
+					<li>crossword puzzle enthusiast;</li>
+					<li>and geography buff.</li>
+				</ul>
+			</div>
+
+			<div id="experience" class="container-fluid color1">
+				<h2 class="theme-color">Experience</h2>
+				<p class="lead">I am currently working as a teaching assistant at
+				<a href="http://www.allstarcode.org/">All Star Code</a>.</br>
+				I have worked in the past as a CS tutor at Swarthmore College </br>
+				and as a research assistant at the 
+				<a href="http://www.whoi.edu/">Woods Hole Oceanographic Institution</a>.
+				</p>
+				<p>Check out 
+				<a href="https://www.linkedin.com/in/oliver-newman-a74a02ba">
+					my LinkedIn</a> for more info.</p>
+			</div>
+
+			<div id="skills" class="container-fluid color2">
+				<h2 class="theme-color">Skills</h2>
+				<p class="lead">
+					Languages: Python, C, C++, JavaScript</br>
+					Frameworks: Django
+			</div>
+
+			<div id="projects" class="container-fluid color1">
+				<h2 class="theme-color">Projects</h2>
+				<p class="lead">
+					<a href="https://oliver-newman.github.io/bubbles/">Bubbles</a>,
+					a fun but completely useless interactive toy using p5.js</br>
+				</p>
+				<p>Check out <a href="https://github.com/oliver-newman">my GitHub</a> 
+				for in-progress projects and source code.</p>
+
+			</div>
+
+			<div id="contact" class="container-fluid color2">
+				<h3>Contact</h3>
+				<p>oliver@whmsi.com</p>
+				<p>onewman1@swarthmore.edu</p>
+				<p id="logobar">
+					<a href="https://www.linkedin.com/in/oliver-newman-a74a02ba">
+						<img class="logo" src="images/linkedin.png" alt="LinkedIn">
+					</a>
+					<a href="https://github.com/oliver-newman">
+						<img class="logo" src="images/github.png" alt="GitHub">
+					</a>
+					<a href="https://en.wikipedia.org/wiki/User:Orn688">
+						<img class="logo" src="images/wikipedia.png" alt="Wikipedia">
+					</a>
+					<a href="https://www.strava.com/athletes/5882007">
+						<img class="logo" src="images/strava.png" alt="Strava">
+					</a>
+				</p>
+
+				<div id="copyright">
+					<p></br>&copy;2016 Oliver Newman</p>
+				</div>
+			</div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
 	</body>
 
 </html>
+
+
+
+
+
+
+
