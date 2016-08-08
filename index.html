@@ -9,6 +9,9 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="images/onLogo.ico" />
 
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+
 		<!-- Bootstrap -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" 
@@ -27,7 +30,14 @@
 			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
 			crossorigin="anonymous"></script>
 		<!-- End Bootstrap stuff -->
-		
+
+		<!-- Google Maps JS API -->
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNDFVQeNpm6wW3HIDXojHYNYeIvcUSiOg&callback=initMap">
+		</script>
+
+		<script src="js/map_background.js"></script>
+
 		<!-- My CSS -->
 		<link rel="stylesheet" href="styles.css">
 	</head>
@@ -56,7 +66,7 @@
     </nav>
 
     <div class="container-full">
-      <div class="container-fluid color1">
+      <div id="map" class="container-fluid">
 				<div class="row">
 					<div class="col-md-3 col-centered">
 						<img id="profile-pic" src="images/oliver.jpg" alt="Oliver">
