@@ -9,6 +9,9 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="images/onLogo.ico" />
 
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+
 		<!-- Bootstrap -->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" 
@@ -27,7 +30,7 @@
 			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
 			crossorigin="anonymous"></script>
 		<!-- End Bootstrap stuff -->
-		
+
 		<!-- My CSS -->
 		<link rel="stylesheet" href="styles.css">
 	</head>
@@ -55,15 +58,15 @@
       </div>
     </nav>
 
-    <div class="container-full">
-      <div class="container-fluid color1">
+		<div class="container-full">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-3 col-centered">
 						<img id="profile-pic" src="images/oliver.jpg" alt="Oliver">
+						<h1 class="theme-color">Oliver Newman</h1>
 					</div>
 				</div>
-        <h1 class="theme-color">Oliver Newman</h1>
-      </div>
+			</div>
 
 			<div id="about-me" class="container-fluid color2">
 				<h2 class="theme-color">About Me</h2>
@@ -80,70 +83,62 @@
 				</ul>
 			</div>
 
-			<div id="experience" class="container-fluid color1">
-				<h2 class="theme-color">Experience</h2>
-				<p class="lead">I am currently working as a teaching assistant at
-				<a href="http://www.allstarcode.org/">All Star Code</a>.</br>
-				I have worked in the past as a CS tutor at Swarthmore College </br>
-				and as a research assistant at the 
-				<a href="http://www.whoi.edu/">Woods Hole Oceanographic Institution</a>.
-				</p>
-				<p>Check out 
-				<a href="https://www.linkedin.com/in/oliver-newman-a74a02ba">
-					my LinkedIn</a> for more info.</p>
-			</div>
 
-			<div id="skills" class="container-fluid color2">
-				<h2 class="theme-color">Skills</h2>
-				<p class="lead">
-					Languages: Python, C, C++, JavaScript</br>
-					Frameworks: Django
-			</div>
+      <div id="experience" class="container-fluid color1">
+        <h2 class="theme-color">Experience</h2>
+        <p class="lead">I am currently working as a teaching assistant at
+        <a href="http://www.allstarcode.org/">All Star Code</a>.</br>
+        I have worked in the past as a CS tutor at Swarthmore College </br>
+        and as a research assistant at the 
+        <a href="http://www.whoi.edu/">Woods Hole Oceanographic Institution</a>.
+        </p>
+        <p>Check out 
+        <a href="https://www.linkedin.com/in/oliver-newman-a74a02ba">
+          my LinkedIn</a> for more info.</p>
+      </div>
 
-			<div id="projects" class="container-fluid color1">
-				<h2 class="theme-color">Projects</h2>
-				<p class="lead">
-					<a href="https://oliver-newman.github.io/bubbles/">Bubbles</a>,
-					a fun but completely useless interactive toy using p5.js</br>
-				</p>
-				<p>Check out <a href="https://github.com/oliver-newman">my GitHub</a> 
-				for in-progress projects and source code.</p>
+      <div id="skills" class="container-fluid color2">
+        <h2 class="theme-color">Skills</h2>
+        <p class="lead">
+          Languages: Python, C, C++, JavaScript</br>
+          Frameworks: Django
+      </div>
 
-			</div>
+      <div id="projects" class="container-fluid color1">
+        <h2 class="theme-color">Projects</h2>
+        <p class="lead">
+          <a href="https://oliver-newman.github.io/bubbles/">Bubbles</a>,
+          a fun but completely useless interactive toy using p5.js</br>
+        </p>
+        <p>Check out <a href="https://github.com/oliver-newman">my GitHub</a> 
+        for in-progress projects and source code.</p>
 
-			<div id="contact" class="container-fluid color2">
-				<h3>Contact</h3>
-				<p>oliver@whmsi.com</p>
-				<p>onewman1@swarthmore.edu</p>
-				<p id="logobar">
-					<a href="https://www.linkedin.com/in/oliver-newman-a74a02ba">
-						<img class="logo" src="images/linkedin.png" alt="LinkedIn">
-					</a>
-					<a href="https://github.com/oliver-newman">
-						<img class="logo" src="images/github.png" alt="GitHub">
-					</a>
-					<a href="https://en.wikipedia.org/wiki/User:Orn688">
-						<img class="logo" src="images/wikipedia.png" alt="Wikipedia">
-					</a>
-					<a href="https://www.strava.com/athletes/5882007">
-						<img class="logo" src="images/strava.png" alt="Strava">
-					</a>
-				</p>
+      </div>
 
-				<div id="copyright">
-					<p></br>&copy;2016 Oliver Newman</p>
-				</div>
-			</div>
+      <div id="contact" class="container-fluid color2">
+        <h3>Contact</h3>
+        <p>oliver@whmsi.com</p>
+        <p>onewman1@swarthmore.edu</p>
+        <p id="logobar">
+          <a href="https://www.linkedin.com/in/oliver-newman-a74a02ba">
+            <img class="logo" src="images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/oliver-newman">
+            <img class="logo" src="images/github.png" alt="GitHub">
+          </a>
+          <a href="https://en.wikipedia.org/wiki/User:Orn688">
+            <img class="logo" src="images/wikipedia.png" alt="Wikipedia">
+          </a>
+          <a href="https://www.strava.com/athletes/5882007">
+            <img class="logo" src="images/strava.png" alt="Strava">
+          </a>
+        </p>
+
+        <div id="copyright">
+          <p></br>&copy;2016 Oliver Newman</p>
+        </div>
+      </div>
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 	</body>
 

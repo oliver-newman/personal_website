@@ -39,6 +39,16 @@ body {
 	margin: 0 auto;
 }
 
+#map {
+	position: absolute;
+	z-index: 0;
+	top:0;
+	bottom:0;
+	right: 200px;
+	height: 100%;
+	width:1580px;
+}
+
 #profile-pic {
 	width: 350px;
 	height: 350px;
