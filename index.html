@@ -33,37 +33,26 @@
 
 		<!-- My CSS -->
 		<link rel="stylesheet" href="css/styles.css">
+
+		<script src="js/vimMode.js"></script>
 	</head>
 
 	<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-          </button>
-          <a class="navbar-brand" href="#">Oliver Newman</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+		<ul id="nav">
+			<li><a id="nav-home" href="#">Oliver Newman</a></li>
+			<li><a class="section" href="#about-me">About Me</a></li>
+			<li><a class="section" href="#experience">Experience</a></li>
+			<li><a class="section" href="#skills">Skills</a></li>
+			<li><a class="section" href="#projects">Projects</a></li>
+			<li><a class="section" href="#contact">Contact</a></li>
+		</ul>
 
 		<div class="container-full">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-3 col-centered">
 						<img id="profile-pic" src="images/oliver.jpg" alt="Oliver">
-						<h1 class="theme-color">Oliver Newman</h1>
+						<h1 id="name" class="theme-color">Oliver Newman</h1>
 					</div>
 				</div>
 			</div>
@@ -76,6 +65,10 @@
 						<a class="color2" href="https://www.swarthmore.edu">
 							Swarthmore College</a>;
 					</li>
+					<li>member of the 
+						<a class="color2" href="https://www.sccs.swarthmore.edu/">
+							Swarthmore College Computer Society</a>;
+					</li>
 					<li>coder and aspiring software developer;</li>
 					<li>distance runner and road cyclist;</li>
 					<li>crossword puzzle enthusiast;</li>
@@ -86,8 +79,9 @@
 
       <div id="experience" class="container-fluid color1">
         <h2 class="theme-color">Experience</h2>
-        <p class="lead">I am currently working as a teaching assistant at
-        <a href="http://www.allstarcode.org/">All Star Code</a>.</br>
+        <p class="lead">I spent the summer of 2016 currently working as a 
+				teaching assistant at 
+				<a href="http://www.allstarcode.org/">All Star Code</a>.</br>
         I have worked in the past as a CS tutor at Swarthmore College </br>
         and as a research assistant at the 
         <a href="http://www.whoi.edu/">Woods Hole Oceanographic Institution</a>.
@@ -100,8 +94,12 @@
       <div id="skills" class="container-fluid color2">
         <h2 class="theme-color">Skills</h2>
         <p class="lead">
-          Languages: Python, C, C++, JavaScript</br>
-          Frameworks: Django
+          Languages: Python, C, C++, JavaScript, HTML/CSS</br>
+					Frameworks: Django</br>
+					Software: Unix, Mac OS X, Git</br>
+					Text Editor: Vim. That is all.
+
+				</p>
       </div>
 
       <div id="projects" class="container-fluid color1">
@@ -109,6 +107,8 @@
         <p class="lead">
           <a href="https://oliver-newman.github.io/bubbles/">Bubbles</a>,
           a fun but completely useless interactive toy using p5.js</br>
+					Redesigning the Swarthmore College Computer Society
+					<a href="https://sccs.swarthmore.edu/">website</a></br>
         </p>
         <p>Check out <a href="https://github.com/oliver-newman">my GitHub</a> 
         for in-progress projects and source code.</p>
@@ -117,8 +117,8 @@
 
       <div id="contact" class="container-fluid color2">
         <h3>Contact</h3>
-        <p>oliver@whmsi.com</p>
         <p>onewman1@swarthmore.edu</p>
+        <p>oliver@whmsi.com</p>
         <p id="logobar">
           <a href="https://www.linkedin.com/in/oliver-newman-a74a02ba">
             <img class="logo" src="images/linkedin.png" alt="LinkedIn">
