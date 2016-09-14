@@ -1,67 +1,60 @@
-body {
-	min-width: 980px;
+html, body {
 	text-align: center;
 	font-family: sans-serif;
   font-family: "Lucida Sans Unicode";
-	padding-top: 50px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
 }
 
 .theme-color {
 	color: #003399;
 }
 
-#nav {
-	min-width: 980px;
-	text-align: center;
+#bootstrap-overrides nav {
+	width: 100%;
 	z-index: 50;
 	position: fixed;
-	top: 0;
-	width: 100%;
-	padding: 0;
-	overflow: hidden;
+	border-radius: 0;
+	border: 0px;
+}
+
+#bootstrap-overrides nav * {
 	background-color: black;
+}
+
+#bootstrap-overrides nav a {
 	color: white;
-	list-style-type: none;
-	border-bottom: solid black 0.5px;
+	text-decoration: none;
 }
 
-#nav li {
-	display: inline;
-	text-align: center;
-	float: left;
+#bootstrap-overrides #nav-links {
+	border: 0px;
 }
 
-#nav li a#nav-home {
-	border-right: solid white 1px;
+#bootstrap-overrides #nav-links a:hover {
+	background-color: gray;
+}
+
+#bootstrap-overrides .navbar-brand {
 	text-padding: bold;
 	color: #4d94ff;
 }
 
-#nav li a {
-	color: white;
-  display: block;
-	padding: 10px;
-	padding-right: 15px;
-	padding-left: 15px;
-	text-decoration: none;
-	border-top: solid black 5px;
-	border-bottom: solid black 5px;
+#bootstrap-overrides button.navbar-toggle {
+	border-color: #888888;
 }
 
-/* Change text to blue on hover */
-#nav li a.section:hover {
-	border-bottom: solid #4d94ff 5px;
+#bootstrap-overrides .icon-bar {
+	background-color: white;
 }
 
-.container-fluid {
+.section {
 	position: relative;
 	padding-top: 70px;
 	padding-bottom: 70px;
-}
-
-.container-full {
-	margin: 0 auto;
-	width: 100%;
 }
 
 .color1 {
@@ -74,21 +67,25 @@ body {
 	color: white;
 }
 
-.col-centered {
-	float: none;
-	margin: 0 auto;
-}
-
 #profile-pic {
 	float: none;
+	border-radius: 50%;
 	margin: 0 auto;
 	width: 350px;
 	height: 350px;
 }
 
-ul#about-list {
+div.section p, div.section ul.section-ul {
+	font-size: 1.4em; 
+}
+
+ul.section-ul {
 	list-style: none;
 	padding-left: 0;
+}
+
+div.section p.footnote {
+	font-size: 1em; 
 }
 
 /* General links in body */
@@ -107,11 +104,11 @@ a, a:hover {
 	padding-right: 10px;
 }
 
-#copyright {
-	color: inherit;
-	padding-right: 20px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
+/*#copyright {*/
+	/*color: inherit;*/
+	/*padding-right: 20px;*/
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	/*right: 0;*/
+/*}*/
 	
