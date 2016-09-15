@@ -1,7 +1,7 @@
 html, body {
 	text-align: center;
-	font-family: sans-serif;
-  font-family: "Lucida Sans Unicode";
+	font-family: Geneva;
+  /*font-family: "Lucida Sans Unicode";*/
 	width: 100%;
 	height: 100%;
 	margin: 0px;
@@ -44,7 +44,15 @@ html, body {
 }
 
 #bootstrap-overrides button.navbar-toggle {
-	border-color: #888888;
+	border: none;
+}
+
+#bootstrap-overrides button.navbar-toggle:hover {
+	background-color: gray;
+}
+
+#bootstrap-overrides button.navbar-toggle:active {
+	background-color: gray;
 }
 
 #bootstrap-overrides .icon-bar {
@@ -103,12 +111,3 @@ a, a:hover {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
-/*#copyright {*/
-	/*color: inherit;*/
-	/*padding-right: 20px;*/
-	/*position: absolute;*/
-	/*bottom: 0;*/
-	/*right: 0;*/
-/*}*/
-	
