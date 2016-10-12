@@ -58,7 +58,7 @@ html, body {
 	background-color: white;
 }
 
-.section {
+section {
 	position: relative;
 	padding-top: 70px;
 	padding-bottom: 70px;
@@ -82,7 +82,7 @@ html, body {
 	height: auto;
 }
 
-div.section p, div.section ul.section-ul {
+section p, section ul.section-ul {
 	font-size: 1.4em; 
 }
 
@@ -91,7 +91,7 @@ ul.section-ul {
 	padding-left: 0;
 }
 
-div.section p.footnote {
+section p.footnote {
 	font-size: 1em; 
 }
 
