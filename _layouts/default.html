@@ -1,53 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-    <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include head.html %}
 
-		<title>Oliver Newman</title>
-
-		<link rel="shortcut icon" type="image/x-icon" href="images/onLogo.ico" />
-
-		<script src="https://code.jquery.com/jquery-3.1.0.js"
-			integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
-			crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet"
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-			integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-			crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-			crossorigin="anonymous"></script>
-
-		<link rel="stylesheet" href="{{ baseurl }}/css/main.css">
-	</head>
-
-	<body id="bootstrap-overrides">
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-links">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/">Oliver Newman</a>
-				</div>
-				<div class="collapse navbar-collapse" id="nav-links">
-					<ul class="nav navbar-nav">
-            <li><a href="{{ baseurl }}/experience/index.html">Experience</a></li>
-						<li><a href="{{ baseurl }}/skills/index.html">Skills</a></li>
-						<li><a href="{{ baseurl }}/projects/index.html">Projects</a></li>
-						<!--<li><a href="contact/index.html">Contact</a></li>-->
-					</ul>
-				</div>
-			</div>
-		</nav>
+	<body>
+    {% include navbar.html %}
 
     {{ content }}
 
+    {% include footer.html %}
+    {% include js_includes.html %}
 	</body>
 
 </html>
