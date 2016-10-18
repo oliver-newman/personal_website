@@ -8,7 +8,7 @@ $light-blue: #4d94ff;
 body {
   position: relative;
   min-height: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
 }
 
 .container {
@@ -22,17 +22,21 @@ body {
   border-bottom: solid 1px $dark-blue;
   background-color: white;
   #navbar-header {
-    a.navbar-brand {
+    .navbar-brand {
       color: white;
     }
-  }
-  button.navbar-toggle {
-    .icon-bar {
-      background-color: white;
+    button.navbar-toggle {
+      background-color: inherit;
+      &:hover {
+        background-color: $light-blue;
+      }
+      border: none;
+      .icon-bar {
+        background-color: $dark-blue;
+      }
     }
   }
 }
-
 .section-container {
   h1, h2, h3, h4, h5, h6 {
     color: $dark-blue;
