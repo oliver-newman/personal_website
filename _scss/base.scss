@@ -1,5 +1,8 @@
 $dark-blue: #003399;
 $light-blue: #4d94ff;
+$navbar-color: white;
+$navbar-text-color: $dark-blue;
+$blue-contrast-color: white;
 
 * {
   box-sizing: border-box;
@@ -20,23 +23,32 @@ body {
   border-radius: 0px;
   border: none;
   border-bottom: solid 1px $dark-blue;
-  background-color: white;
+  background-color: $navbar-color;
   #navbar-header {
-    .navbar-brand {
-      color: white;
+    a#brand {
+      color: $navbar-text-color;
     }
     button.navbar-toggle {
       background-color: inherit;
+      border: none;
       &:hover {
         background-color: $light-blue;
       }
-      border: none;
       .icon-bar {
         background-color: $dark-blue;
       }
     }
   }
+  #nav-links {
+    a {
+      color: $navbar-text-color;
+      &:hover {
+        color: $light-blue;
+      }
+    }
+  }
 }
+
 .section-container {
   h1, h2, h3, h4, h5, h6 {
     color: $dark-blue;
@@ -47,12 +59,12 @@ body {
 
 header {
   background-color: $light-blue;
-  color: white;
+  color: $blue-contrast-color;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   p {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 }
 
@@ -68,7 +80,7 @@ footer {
   bottom: 0;
   left: 0;
   background-color: $light-blue;
-  color: white;
+  color: $blue-contrast-color;
   text-align: center;
   #logobar a {
     text-decoration: none;

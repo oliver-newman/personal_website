@@ -1,0 +1,12 @@
+.carousel {
+  width: 500px;
+  .item {
+    img {
+      height: 500px;
+      width: auto;
+    }
+    .carousel-caption p {
+      font-size: 1em;
+    }
+  }
+}
