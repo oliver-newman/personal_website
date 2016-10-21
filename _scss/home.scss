@@ -12,3 +12,13 @@
     transform: scale(1.1);
   }
 }
+header {
+  #logobar a {
+    text-decoration: none;
+  }
+  .logo {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
