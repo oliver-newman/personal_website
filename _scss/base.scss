@@ -1,17 +1,17 @@
 $dark-blue: #003399;
 $light-blue: #4d94ff;
 $navbar-color: white;
-$navbar-text-color: $dark-blue;
 $blue-contrast-color: white;
+$navbar-min-width: 768px;
 
-* {
-  box-sizing: border-box;
+html {
+  height: 100%;
 }
 
 body {
   position: relative;
   min-height: 100%;
-  padding-bottom: 15rem;
+  padding-bottom: 16rem;
 }
 
 .container {
@@ -24,26 +24,36 @@ body {
   border: none;
   border-bottom: solid 1px $dark-blue;
   background-color: $navbar-color;
-  #navbar-header {
-    a#brand {
-      color: $navbar-text-color;
+  #brand {
+    color: $dark-blue;
+  }
+  button.navbar-toggle {
+    border: none;
+    background-color: inherit;
+    &:hover {
+      background-color: $light-blue;
     }
-    button.navbar-toggle {
-      background-color: inherit;
-      border: none;
-      &:hover {
-        background-color: $light-blue;
-      }
-      .icon-bar {
-        background-color: $dark-blue;
-      }
+    .icon-bar {
+      background-color: $dark-blue;
     }
   }
   #nav-links {
     a {
-      color: $navbar-text-color;
-      &:hover {
-        color: $light-blue;
+      color: $dark-blue;
+    }
+    li:hover a:not(.active) {
+      color: $light-blue;
+    }
+    .hoverbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+    }
+    @media (min-width: $navbar-min-width) {
+      li:hover a:not(.active) + .hoverbar {
+        background-color: $light-blue;
       }
     }
   }
