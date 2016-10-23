@@ -1,0 +1,104 @@
+$dark-blue: #003399;
+$light-blue: #4d94ff;
+$navbar-color: white;
+$blue-contrast-color: white;
+$navbar-min-width: 768px;
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 16rem;
+}
+
+.container {
+  max-width: 800px;
+}
+
+#navigation {
+  margin: 0px;
+  border-radius: 0px;
+  border: none;
+  border-bottom: solid 1px $dark-blue;
+  background-color: $navbar-color;
+  #brand {
+    color: $dark-blue;
+  }
+  button.navbar-toggle {
+    border: none;
+    background-color: inherit;
+    &:hover {
+      background-color: $light-blue;
+    }
+    .icon-bar {
+      background-color: $dark-blue;
+    }
+  }
+  #nav-links {
+    a {
+      color: $dark-blue;
+    }
+    li:hover a:not(.active) {
+      color: $light-blue;
+    }
+    .hoverbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+    }
+    @media (min-width: $navbar-min-width) {
+      li:hover a:not(.active) + .hoverbar {
+        background-color: $light-blue;
+      }
+    }
+  }
+}
+
+.section-container {
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-blue;
+
+  }
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header {
+  background-color: $light-blue;
+  color: $blue-contrast-color;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  p {
+    font-size: 1.4em;
+  }
+}
+
+#content {
+  a, a:hover {
+    text-decoration: underline;
+  }
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $light-blue;
+  color: $blue-contrast-color;
+  text-align: center;
+  #logobar a {
+    text-decoration: none;
+  }
+  .logo {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

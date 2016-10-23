@@ -1,0 +1,12 @@
+title: Oliver Newman
+email: oliver@whmsi.com
+description: > 
+  Oliver Newman is a current junior computer science major at Swarthmore College
+  pursuing a career in software engineering, particularly full-stack 
+  development.
+url: "http://oliver-newman.github.io" # the base hostname & protocol site
+github_username: oliver-newman
+
+sass:
+  sass_dir: _scss
+  style: :compressed
