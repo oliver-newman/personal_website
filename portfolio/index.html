@@ -7,28 +7,76 @@ permalink: /portfolio/
   <div class="container section-container">
     <section id="projects">
       <h2>Projects</h2>
-      <p>I am working with fellow Swarthmore student Tyler Huntington
-      on Thrive (formerly
-      <a target="_blank" href="http://www.swarthmore.edu/news-events/new-class-lang-opportunity-scholars-announced-0">Harvest Circle</a>),
-      a project funded by Swarthmore's 
-      <a target="_blank" href="http://www.swarthmore.edu/lang-center-civic-social-responsibility">Lang Center for Civic &amp; Social Responsibility</a>.
-      The aim of Thrive is to raise money to provide free dinners to high school
-      students in Chester, PA, using a "virtual charity run" system. This will
-      involve a web-based platform built on Ruby on Rails, which will allow
-      users to track miles and earn money for the project pledged by corporate
-      sponsors.
-      </p>
-      <p>I also redesigned (and am currently improving) the
-      <a target="_blank" href="http://www.sccs.swarthmore.edu/">Swarthmore College Computer Society</a> 
-      homepage using Jekyll; the development version can be viewed
-      <a target="_blank" href="https://oliver-newman.github.io/sccs-new-home/">here</a>.
-      </p>
-      <p>Also check out
-      <a target="_blank" href="https://oliver-newman.github.io/bubbles/">Bubbles</a>,
-      a fun but completely useless interactive toy using p5.js.
-      </p>
+      <h3>TeamThrive</h3>
       <p>
-        See <a target="_blank" href="https://github.com/oliver-newman">my GitHub</a>
+        I am working with fellow Swarthmore student Tyler Huntington on 
+        TeamThrive (formerly
+        <a target="_blank" href="http://www.swarthmore.edu/news-events/new-class-lang-opportunity-scholars-announced-0">Harvest Circle</a>),
+        a project funded by Swarthmore's 
+        <a target="_blank" href="http://www.swarthmore.edu/lang-center-civic-social-responsibility">Lang Center for Civic &amp; Social Responsibility</a>.
+        The mission of TeamThrive is to raise money to provide free dinners to
+        high school students in Chester, PA, using a "virtual charity run"
+        system.  This will involve a web-based platform built on Ruby on Rails,
+        which will allow users to track miles and earn money for the project
+        pledged by corporate sponsors.
+      </p>
+      {% comment %}
+      <div class="wrap">
+        <a href="http://team-thrive.herokuapp.com/" class="iframe-link">
+          <iframe src="http://team-thrive.herokuapp.com/" scrolling="no" target="_parent"></iframe>
+        </a>
+      </div>
+      {% endcomment %}
+
+      <h3>Homebrew</h3>
+      <p>
+        I am a contributor to the 
+        <a href="https://github.com/Homebrew/homebrew-core">Homebrew-Core</a> 
+        open-source project, a collection of package configuration files written
+        in Ruby for <a href="http://brew.sh/">Homebrew</a>, the MacOS package 
+        manager. My main contribution thus far has been fixing system calls for
+        25 different packages to make them more robust.
+      </p>
+
+      <h3>SCCS</h3>
+      <p>
+        I also redesigned (and am currently improving) the
+        <a target="_blank" href="http://www.sccs.swarthmore.edu/">Swarthmore College Computer Society</a> 
+        homepage using Jekyll; the development version can be viewed
+        <a target="_blank" href="https://oliver-newman.github.io/sccs-new-home/">here</a>.
+      </p>
+      {% comment %}
+      <div class="wrap">
+        <a href="https://oliver-newman.github.io/sccs-new-home/" class="iframe-link">
+          <iframe data="https://oliver-newman.github.io/sccs-new-home/" scrolling="no" target="_parent"></iframe>
+        </a>
+      </div>
+      {% endcomment%}
+
+      {% comment %}
+      <p>
+       {% gpa calc info here %}
+      </p>
+      {% endcomment%}
+
+      <h3>Other</h3>
+      <p>
+        Also check out
+        <a target="_blank" href="https://oliver-newman.github.io/bubbles/">Bubbles</a>,
+        a fun but completely useless interactive toy using p5.js.
+      </p>
+      {% comment %}
+      <div class="wrap">
+        <a href="https://oliver-newman.github.io/bubbles/" class="iframe-link" target="_parent">
+          <iframe src="https://oliver-newman.github.io/bubbles/" scrolling="no"></iframe>
+        </a>
+      </div>
+      {% endcomment%}
+
+
+      <p>
+        See 
+        <a target="_blank" href="https://github.com/oliver-newman">my GitHub</a>
         for in-progress projects and source code.</p>
       </p>
     </section>
