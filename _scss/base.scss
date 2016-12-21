@@ -44,18 +44,6 @@ body {
     li:hover a:not(.active) {
       color: $light-blue;
     }
-    .hoverbar {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-    }
-    @media (min-width: $navbar-min-width) {
-      li:hover a:not(.active) + .hoverbar {
-        background-color: $light-blue;
-      }
-    }
   }
 }
 
