@@ -16,7 +16,7 @@ body {
   background-color: $background-color;
 }
 
-.container {
+.confined-width {
   max-width: 800px;
 }
 
@@ -54,14 +54,6 @@ body {
   }
 }
 
-.section-container {
-  h1, h2, h3, h4, h5, h6 {
-    color: $dark-blue;
-  }
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 header {
   text-align: center;
   padding-top: 20px;
@@ -71,14 +63,21 @@ header {
   }
 }
 
-#content {
+.content {
+  padding-top: 20px;
+  padding-bottom: 20px;
   a, a:hover {
     color: inherit;
     text-decoration: underline;
   }
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-blue;
+  }
 }
 
 footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: absolute;
   right: 0;
   bottom: 0;
