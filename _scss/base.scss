@@ -1,17 +1,18 @@
 $dark-blue: #003399;
-$light-blue: #4d94ff;
-$navbar-color: white;
-$blue-contrast-color: white;
-$navbar-min-width: 768px;
+$light-blue: #0055ff;
+$background-color: white;
+$light-gray: #aaaaaa;
 
 html {
   height: 100%;
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   min-height: 100%;
   padding-bottom: 16rem;
+  background-color: $background-color;
 }
 
 .container {
@@ -22,8 +23,8 @@ body {
   margin: 0px;
   border-radius: 0px;
   border: none;
-  // border-bottom: solid 1px $dark-blue;
-  background-color: $navbar-color;
+  background-color: $background-color;
+  text-align: center;
   #brand {
     color: $dark-blue;
   }
@@ -31,18 +32,21 @@ body {
     border: none;
     background-color: inherit;
     &:hover {
-      background-color: $light-blue;
+      .icon-bar {
+        background-color: $dark-blue;
+      }
     }
     .icon-bar {
-      background-color: $dark-blue;
+      background-color: $light-gray;
     }
   }
   #nav-links {
+    border: none;
     a {
-      color: $dark-blue;
+      color: $light-gray;
     }
     li:hover a:not(.active) {
-      color: $light-blue;
+      color: $dark-blue;
     }
   }
 }
@@ -57,8 +61,6 @@ body {
 }
 
 header {
-  background-color: $light-blue;
-  color: $blue-contrast-color;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -79,14 +81,12 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $light-blue;
-  color: $blue-contrast-color;
   text-align: center;
   #logobar a {
     text-decoration: none;
   }
   img.logo {
-    height: 50px;
+    height: 40px;
     padding-left: 10px;
     padding-right: 10px;
   }
