@@ -1,6 +1,5 @@
 $dark-blue: #003399;
-$light-blue: #0055ff;
-$background-color: white;
+$background-color: #fcfcfc;
 $light-gray: #aaaaaa;
 $fade-time: .2s;
 
@@ -12,7 +11,7 @@ body {
   font-family: 'Roboto', sans-serif;
   position: relative;
   min-height: 100%;
-  padding-bottom: 16rem;
+  padding-bottom: 10rem; /* Space for logo bar at bottom */
   background-color: $background-color;
 }
 
@@ -32,13 +31,15 @@ body {
   button.navbar-toggle {
     border: none;
     background-color: inherit;
+    .icon-bar {
+      -webkit-transition: background-color $fade-time;
+      transition: background-color $fade-time;
+      background-color: $light-gray;
+    }
     &:hover {
       .icon-bar {
         background-color: $dark-blue;
       }
-    }
-    .icon-bar {
-      background-color: $light-gray;
     }
   }
   #nav-links {
@@ -56,16 +57,14 @@ body {
 
 header {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   p {
     font-size: 1.4em;
   }
 }
 
 .content {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   a, a:hover {
     color: inherit;
     text-decoration: underline;
@@ -76,15 +75,18 @@ header {
 }
 
 footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   text-align: center;
-  #logobar a {
-    text-decoration: none;
+  #logobar {
+    border-top: .5px solid $light-gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a {
+      text-decoration: none;
+    }
   }
   .logo {
     height: 40px;

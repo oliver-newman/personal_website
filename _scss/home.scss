@@ -1,17 +1,4 @@
-#profile-pic {
-  border-radius: 50%;
-  border: 5px solid $dark-blue;
-  width: 350px;
-  max-width: 100%;
+.profile-pic {
+  width: 100%;
   height: auto;
-}
-header {
-  #logobar a {
-    text-decoration: none;
-  }
-  .logo {
-    height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
