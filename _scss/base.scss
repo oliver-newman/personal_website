@@ -19,13 +19,13 @@ body {
   max-width: 800px;
 }
 
-#navigation {
+.navigation {
   margin: 0px;
   border-radius: 0px;
   border: none;
   background-color: $background-color;
   text-align: center;
-  #brand {
+  .brand {
     color: $dark-blue;
   }
   button.navbar-toggle {
