@@ -16,25 +16,7 @@ $iframe-scale: 0.5;
   }
 }
 
-.wrap { 
-  width: 600px;
-  height: 280px;
-  padding: 0;
-  overflow: hidden; 
-}
-
-iframe { 
-  width: 800px; 
-  height: 520px; 
-  border: 1px solid #bbb; 
-}
-
-iframe {
-  -ms-zoom: $iframe-scale;
-  -moz-transform: scale($iframe-scale);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale($iframe-scale);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale($iframe-scale);
-  -webkit-transform-origin: 0 0;
+.screenshot {
+  width: 100%;
+  margin-bottom: 10px;
 }
