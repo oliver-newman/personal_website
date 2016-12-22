@@ -80,26 +80,38 @@ footer {
   bottom: 0;
   left: 0;
   text-align: center;
-  #logobar {
+  .logobar {
     border-top: .5px solid $light-gray;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     a {
       text-decoration: none;
     }
+    .logo {
+      height: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: $light-gray;
+      -webkit-filter: grayscale(100%) opacity(.4);
+      filter: grayscale(100%) opacity(.4);
+      -webkit-transition: -webkit-filter $fade-time linear;
+      transition: filter $fade-time linear;
+    }
+    .logo:hover {
+      -webkit-filter: none;
+      filter: none;
+    }
   }
-  .logo {
-    height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: $light-gray;
-    -webkit-filter: grayscale(100%) opacity(.4);
-    filter: grayscale(100%) opacity(.4);
-    -webkit-transition: -webkit-filter $fade-time linear;
-    transition: filter $fade-time linear;
-  }
-  .logo:hover {
-    -webkit-filter: none;
-    filter: none;
+  .email {
+    a {
+      color: $light-gray;
+      -webkit-transition: color $fade-time;
+      transition: color $fade-time;
+    }
+    a:hover {
+      color: $dark-blue;
+      text-decoration: none;
+    }
   }
 }
+
