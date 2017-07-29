@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+  - 2.3.1
+install: gem install jekyll html-proofer s3_website
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # faster installation of html-proofer
+script: ./script/cibuild.sh
+after_success: s3_website push
+
+exclude: [vendor]
+sudo: false
