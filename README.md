@@ -1,4 +1,4 @@
-# Oliver Newman's person website
+# Oliver Newman's personal website
 
 Built with Jekyll, running on AWS.
 
