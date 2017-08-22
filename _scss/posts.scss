@@ -1,28 +1,24 @@
-.posts {
-  padding: 0;
+.post-list {
   list-style: none;
-  
-  .post {
-    .post-title {
-      text-decoration: none;
+  padding: 0;
+
+  .post-preview,
+  .post-preview:hover {
+    text-decoration: none;
+
+    .post-preview-date {
+      font-style: italic;
     }
   }
 }
 
-.image-container {
-  max-width: 100%;
+.post {
+  .post-title {
+    color: $dark-blue;
+    padding-bottom: 15px;
+  }
 
-  figure {
-    padding-bottom: 10px;
-    img {
-      width: 100%;
-    }
-
-    figcaption {
-      padding-top: 5px;
-      text-align: center;
-      font-size: 0.9em;
-      font-weight: bold;
-    }
+  .post-content {
+    font-size: 108%;
   }
 }

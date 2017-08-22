@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="confined-width content container">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a class="post-preview" href="{{ post.url }}">
+          <h3 class="post-preview-title">{{ post.title }}</h3>
+          <p class="post-preview-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          <p class="post-preview-excerpt">
+            {{ post.excerpt | truncatewords:32 }}
+          </p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
