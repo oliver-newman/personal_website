@@ -1,10 +1,10 @@
 title: Oliver Newman
-email: oliver@whmsi.com
+email: orn688@gmail.com
 description: > 
   Oliver Newman is a computer science major at Swarthmore College pursuing a
   career in software engineering.
 url: "https://www.onewman.com" # the base hostname & protocol site
-github_username: oliver-newman
+github_username: orn688
 
 sass:
   sass_dir: _scss
