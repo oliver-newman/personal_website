@@ -1,6 +1,6 @@
 # Oliver Newman's personal website
 
-[![Build Status](https://travis-ci.org/oliver-newman/personal_website.svg?branch=master)](https://travis-ci.org/oliver-newman/personal_website)
+[![Build Status](https://travis-ci.org/orn688/personal_website.svg?branch=master)](https://travis-ci.org/orn688/personal_website)
 
 Built with Jekyll, running on AWS.
 
